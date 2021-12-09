@@ -3,7 +3,7 @@ on:
   push:
       branches: [ main ]
       paths:
-        - 'part2/05-Github-Action_CI-CD/**'
+        - 'part2/05_Github-Action_CI-CD/**'
 
 jobs:
   build:
@@ -17,5 +17,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: 22
         script: |
-            cd ${{ github.event.repository.name }}/part2/05-Github-Action_CI-CD
+            cd ${{ github.event.repository.name }}/part2/05_Github-Action_CI-CD
             sh deploy_ssh.sh
