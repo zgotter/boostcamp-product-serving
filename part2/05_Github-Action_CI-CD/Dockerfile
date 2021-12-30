@@ -1,6 +1,8 @@
 FROM python:3.8.7-slim-buster
 COPY requirements.txt ./requirements.txt
-RUN pip install -r ./requirements.txt
+RUN pip install pip==21.2.4 && \
+    pip install pip --upgrade && \
+    pip install -r ./requirements.txt
 
 COPY . /app
 WORKDIR /app
