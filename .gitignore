@@ -4,3 +4,7 @@
 .venv/
 __pycache__/
 logs/
+
+# part3 - 04_mlflow
+part3/04_mlflow/mlruns/
+part3/04_mlflow/artifacts/
