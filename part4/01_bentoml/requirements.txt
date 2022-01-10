@@ -1,0 +1,5 @@
+albumentations
+torch
+torchvision
+efficientnet_pytorch
+streamlit
